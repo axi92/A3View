@@ -45,7 +45,7 @@ echo $row['cop_licenses'];
 					</div>
 					<div class="panel-body">
 						<div class="row">
-							<div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle"> </div>
+							<div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="eMd6y52.png" class="img-circle"> </div>
 							<div class=" col-md-9 col-lg-9 "> 
 								<table class="table table-user-information">
 									<tbody>
@@ -60,18 +60,18 @@ echo $row['cop_licenses'];
 										<tr>
 											<tr>
 												<td>Playtime:</td>
-												<td>Male</td>
+												<td>475</td>
 											</tr>
 											<tr>
 												<td>Home Address</td>
-												<td>Metro Manila,Philippines</td>
+												<td>Kavalla</td>
 											</tr>
 											<tr>
-												<td>Email</td>
-												<td><a href="mailto:info@support.com">info@support.com</a></td>
+												<td>Admin</td>
+												<td>No</a></td>
 											</tr>
-											<td>Phone Number</td>
-											<td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)</td>
+											<td>Licenses:<br><br>Pilot<br>Truck</td>
+											<td><br><br>Passed<br>Failed</td>
 										</tr>
 									</tbody>
 								</table>
