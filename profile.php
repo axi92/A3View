@@ -1,5 +1,24 @@
 <?php
+$link = mysqli_connect("localhost","root","","a3") or die("Error " . mysqli_error($link));
+$playername 	= 'axi92';
+$fraction		= 'ADAC';
+$whitelist_date = '13.03.2015';
 
+
+//consultation:
+
+$query = "SELECT * FROM players LIMIT 0, 5" or die("Error in the consult.." . mysqli_error($link));
+
+//execute the query.
+
+$result = $link->query($query);
+
+//display information:
+$row = mysqli_fetch_array($result);
+echo '<pre>';
+print_r($row);
+echo '</pre>';
+echo $row['cop_licenses'];
 ?>
 
 <!DOCTYPE html>
@@ -22,42 +41,25 @@
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
 				<div class="panel panel-info">
 					<div class="panel-heading">
-						<h3 class="panel-title">Sheena Kristin A.Eschor</h3>
+						<h3 class="panel-title"><?php echo $playername; ?></h3>
 					</div>
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle"> </div>
-							<!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
-							  <dl>
-								<dt>DEPARTMENT:</dt>
-								<dd>Administrator</dd>
-								<dt>HIRE DATE</dt>
-								<dd>11/12/2013</dd>
-								<dt>DATE OF BIRTH</dt>
-								   <dd>11/12/2013</dd>
-								<dt>GENDER</dt>
-								<dd>Male</dd>
-							  </dl>
-							</div>-->
 							<div class=" col-md-9 col-lg-9 "> 
 								<table class="table table-user-information">
 									<tbody>
 										<tr>
 											<td>Department:</td>
-											<td>Programming</td>
+											<td><?php echo $fraction; ?></td>
 										</tr>
 										<tr>
 											<td>Hire date:</td>
-											<td>06/23/2013</td>
-										</tr>
-										<tr>
-											<td>Date of Birth</td>
-											<td>01/24/1988</td>
-										</tr>
-								   
+											<td><?php echo $whitelist_date; ?></td>
+										</tr>								   
 										<tr>
 											<tr>
-												<td>Gender</td>
+												<td>Playtime:</td>
 												<td>Male</td>
 											</tr>
 											<tr>
